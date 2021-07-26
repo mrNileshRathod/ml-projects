@@ -1,0 +1,65 @@
+{% extends "layout.html" %} 
+{% block body%}
+<div class="container topForm">
+    <div class="row justify-content-center ">
+        <div class="col col-md-4 col-sm-8">
+            <form action="/fruit-predict" method="POST">
+                <h2 style="color: #fff;">Fruit Dataset</h2>
+                <hr style="background-color: #fff; height: 5px;">
+                <div class="form-group">
+                    <label>Mass</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        id="Mass"
+                        name="Mass"
+                        placeholder="Enter Mass of Fruit"
+                        required
+                    >
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>Width</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        step="any"
+                        id="Width"
+                        name="Width"
+                        placeholder="Enter Width of Fruit"
+                        required
+                    >
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>Height</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        step="any"
+                        id="Height"
+                        name="Height"
+                        placeholder="Enter Height of Fruit"
+                        required
+                    >
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>S_Color</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        step="any"
+                        id="S_Color"
+                        name="S_Color"
+                        placeholder="Enter S_Color of Fruit"
+                        required
+                    >
+                </div>
+                <br>
+                <input class="button" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

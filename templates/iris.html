@@ -1,0 +1,66 @@
+{% extends "layout.html" %} 
+{% block body%}
+<div class="container topForm">
+    <div class="row justify-content-center ">
+        <div class="col col-md-4 col-sm-8">
+            <form action="/iris-predict" method="POST">
+                <h2 style="color: #fff;">Iris Dataset</h2>
+                <hr style="background-color: #fff; height: 5px;">
+                <div class="form-group">
+                    <label for="age">sepal_length</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        step="0.01"
+                        id="sepal_length"
+                        name="sepal_length"
+                        placeholder="Enter Sepal Lenght"
+                        required
+                    >
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="age">sepal_width</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        step="0.01"
+                        id="sepal_width"
+                        name="sepal_width"
+                        placeholder="Enter Sepal Width"
+                        required
+                    >
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="age">petal_length</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        step="0.01"
+                        id="petal_length"
+                        name="petal_length"
+                        placeholder="Enter Petal Lenght"
+                        required
+                    >
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="age">petal_width</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        step="0.01"
+                        id="petal_width"
+                        name="petal_width"
+                        placeholder="Enter Petal Width"
+                        required
+                    >
+                </div>
+                <br>
+                <input class="button" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

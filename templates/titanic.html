@@ -1,0 +1,66 @@
+{% extends "layout.html" %} 
+{% block body%}
+<div class="container topForm">
+    <div class="row justify-content-center ">
+        <div class="col col-md-4 col-sm-8">
+            <form action="/titanic-predict" method="POST">
+                <h2 style="color: #fff;">Titanic Dataset</h2>
+                <hr style="background-color: #fff; height: 5px;">
+                <div class="form-group">
+                    <label>PClass</label>
+                    <select
+                        class="form-select" 
+                        name="PClass"
+                        id="PClass"
+                        required="required"
+                    >
+                        <option value="Upper">Upper class</option>
+                        <option value="Middle">Middle class</option>
+                        <option value="Lower">Lower class</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        id="age"
+                        name="Age"
+                        placeholder="Enter a Age"
+                        required
+                    >
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select
+                        class="form-select"
+                        name="Gender"
+                        id="Gender"
+                        required="required"
+                    >
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>Fare</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        step="00.01"
+                        id="fare"
+                        name="Fare"
+                        placeholder="Enter a Fare"
+                        required
+                    >
+                </div>
+                <br>
+                <input class="button" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

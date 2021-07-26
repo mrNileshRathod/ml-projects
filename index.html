@@ -1,0 +1,32 @@
+{% extends "layout.html" %} 
+{% block body%}
+<div class="container project">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <h1>Project List</h1>
+            <hr>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <div class="card">
+                <img src="{{ url_for('static', filename='image/iris.jpg') }}" alt="iris">
+                <div class="title">Iris Dataset</div>
+                <a href="/iris">Explore</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <div class="card">
+                <img src="{{ url_for('static', filename='image/fruit.jpg') }}" alt="fruit">
+                <div class="title">Fruit Dataset</div>
+                <a href="/fruit">Explore</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <div class="card">
+                <img src="{{ url_for('static', filename='image/titanic.jpg') }}" alt="titanic">
+                <div class="title">Titanic Dataset</div>
+                <a href="/titanic">Explore</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
